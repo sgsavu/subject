@@ -16,7 +16,8 @@
   },
   "keywords": [
     "subject",
-    "observable"
+    "observable",
+    "subscriber"
   ],
   "author": "Jibreel Savu",
   "license": "GPL-3.0-only",
