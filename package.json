@@ -1,0 +1,25 @@
+{
+  "name": "@sgsavu/subject",
+  "description": "Simple implementation of a subject.",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/sgsavu",
+  "repository": {
+    "url": "https://github.com/sgsavu/subject"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "subject",
+    "observable"
+  ],
+  "author": "Jibreel Savu",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
