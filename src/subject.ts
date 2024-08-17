@@ -41,7 +41,7 @@ export const createSubject = <T>(config?: Config<T>) => {
 
             if (replay !== undefined) {
                 const toBeReplayed = values.slice(-replay)
-                toBeReplayed.forEach(fn)
+                toBeReplayed.forEach(v => fn(v))
             }
 
             return {
