@@ -1,6 +1,6 @@
-import { createSubject } from "./subject"
+import { createSubject, Subject } from "./subject"
 
-export const combine = (...subjects) => {
+export const combine = (...subjects: Array<Subject>) => {
     const result = createSubject()
 
     subjects.forEach((subject, index, subjectsArray) => {

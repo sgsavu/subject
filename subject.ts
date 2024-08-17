@@ -1,9 +1,11 @@
 type SubFn = <T>(value: T) => void
 
-type Config<T> = {
+export type Config<T> = {
     initValue?: T,
     replay?: number
 }
+
+export type Subject<T = unknown> = ReturnType<typeof createSubject<T>>
 
 export const createSubject = <T>(config?: Config<T>) => {
     const {
@@ -57,5 +59,3 @@ export const createSubject = <T>(config?: Config<T>) => {
         }
     }
 }
-
-export type Subject<T> = ReturnType<typeof createSubject<T>>
